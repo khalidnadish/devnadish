@@ -1,0 +1,12 @@
+.exp_chractor{
+    position: absolute;
+    bottom: 60px;
+    left: 0px;
+    width: 158px;
+    height: 200px;
+    opacity: .4;
+    background-color: transparent;
+    background-image:url("/src/assets/pageImage/exp.png"); 
+    /* z-index: 1; */
+    /* transform: rotate(-10deg); */
+}

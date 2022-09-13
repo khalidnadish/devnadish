@@ -1,0 +1,7 @@
+.skillTitle{
+    background-color: antiquewhite;
+    color: blue;
+    /* height: 100%; */
+    transform: rotate(90deg);
+    /* width: 15px; */
+}

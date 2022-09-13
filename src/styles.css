@@ -1,0 +1,217 @@
+:root {
+  --bluecolor: #1976d2;
+  --bluelightcolor: #5aa1e7;
+  --redcolor: #d32f2f;
+  --greencolor: #2e7d32;
+  --orangecolor: #ed6c02;
+  --purbecolor: #9c27b0;
+  --textcolor: #ffffff;
+}
+
+* {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 0.5s 0s ease;
+  -moz-transition: all 0.5s 0s ease;
+  -o-transition: all 0.5s 0s ease;
+  transition: all 0.5s 0s ease;
+}
+
+body {
+  max-width: 100vw;
+  height: 80vh;
+  overflow-x: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  max-width: 1280px;
+  width: 100%;
+  text-align: center;
+  background: url("/src/assets/bg.png");
+}
+
+
+
+
+.footarea {
+  height: 10%;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.img__area {
+  position: relative;
+  height: 20%;
+  width: 100%;
+  background-color: var(--bluecolor);
+}
+.about_arw {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.exp_arw {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.live_arw {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.gallery_arw {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-image: url("/src/assets/wave.svg");
+}
+.swiper_div {
+  width: 100%;
+  height: 70%;
+  user-select: none;
+  background-color: transparent;
+}
+.swiper {
+  width: 90%;
+  height: 100%;
+}
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+.swiper-slide:nth-child(1n) {
+  border: 5px solid black;
+  border-image-outset: 150px;
+  border-image: url('/src/assets/prevWorker/alsuraia.png') 30;
+  background-color: var(--bluecolor);
+  opacity: .5;
+
+}
+.swiper-slide:nth-child(2n) {
+  border: 5px solid black;
+  border-image-outset: 150px;
+  border-image: url('/src/assets/prevWorker/alsuraia.png') 30;
+  background-color: var(--purbecolor);
+  opacity: .5;
+
+
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: var(--greencolor);
+  opacity: .5;
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: var(--orangecolor);
+  opacity: .5;
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: var(--redcolor);
+  opacity: .5;
+}
+
+
+.swiper_div .swiper-button-next {
+  color: var(--textcolor);
+  top: 30px
+}
+
+.swiper_div .swiper-button-prev {
+  color: var(--textcolor);
+
+
+
+  top: 30px
+}
+
+.swiper-button-next:after {
+  font-family: swiper-icons;
+  /* font-size: var(--swiper-navigation-size); */
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+
+.div_worker {
+  /* position: absolute; */
+  /* top:100px; */
+  border-radius: 100px;
+  width: 20%;
+  /* background-color: #2e7d32; */
+  margin: 0 auto;
+}
+
+.img_worker {
+  width: 100%;
+  /* aspect-ratio: 1/1; */
+  object-fit: contain;
+  border-radius: 100px;
+  opacity: .5;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .img__area_cont {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    border: "3px solid black";
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 50%;
+    object-fit: scale-down;
+  }
+
+  .footarea {
+    height: 10%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .img__area {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: var(--orangecolor);
+    border-radius: 50%;
+  }
+
+
+
+
+}

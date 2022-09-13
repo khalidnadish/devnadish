@@ -1,0 +1,57 @@
+.button__area {
+  position: absolute;
+  top:40px;
+  left:50%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+  border-radius: 20px;
+  border-color: black;
+  border: 2px solid;
+ opacity: .8;  
+
+width: 100%;
+}
+
+.arow__area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 20%;
+
+}
+
+@media only screen and (max-width: 600px) {
+ 
+  .button__area {
+    position: absolute;
+    top:5px;
+    left: 10px;
+   
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    height: 60px;
+    border-radius: 20px;
+    border-color: black;
+    border: 2px solid;
+    /* padding: 15px; */
+    
+   opacity: 1;  
+  width: max-content;
+  }
+  
+  .arow__area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 20%;
+  
+  }
+   
+
+}

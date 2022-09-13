@@ -1,0 +1,130 @@
+
+.footercontiner{
+  /* width: 100%; */
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  position: absolute;
+  left:15px;
+  bottom:100px;
+  z-index: 10;
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 50px;
+  width: 40px;
+ 
+}
+.mail_div {
+  background-color: var(--purbecolor);
+  height: 100%;
+  width: 25%;
+  color: var(--textcolor);
+  /* border-radius: 0px 0px 0px 40px; */
+  border-radius: 0px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.whatsapp_div {
+
+  background-color: var(--greencolor);
+  height: 100%;
+  width: 25%;
+  color: var(--textcolor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkdn_div {
+  background-color: var(--redcolor);
+
+  height: 100%;
+  width: 25%;
+  color: var(--textcolor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.twter_div {
+  background-color: var(--bluecolor);
+  height: 100%;
+  width: 25%;
+  color: var(--textcolor);
+  /* border-radius: 0px 0px 40px 0px; */
+  border-radius: 0px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.facebook_div {
+  background-color: var(--bluelightcolor);
+  height: 100%;
+  width: 25%;
+  color: var(--textcolor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.setting{
+  /* display: flex;
+  justify-content: space-between;
+  flex-direction: row; */
+  /* position: absolute; */
+  /* top: 50px; */
+  /* left: 20px; */
+  /* background-color:brown; */
+  /* object-fit: contain; */
+  /* padding: 5px; */
+  /* border-radius: 8px; */
+
+}
+.langphoto{
+  width: 24px;
+}
+
+.mailform{
+  min-width: 250px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 14px;
+  display: flex;
+  gap: 14PX;
+  flex-direction: column;
+  
+  box-shadow:  var(--boxshadow1)
+
+}
+
+
+@media only screen and (max-width: 500px) {
+ 
+  
+
+  .footercontiner{
+    height: fit-content;
+    width:92vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap:10px;
+    position: absolute;
+align-items: center;
+    /* right:20px; */
+    bottom:10px;
+    z-index: 10;
+    background-color: aliceblue;
+    padding: 5px 15px 5px 15px;
+    border-radius: 50px;
+    height: 40px;
+
+   
+  }
+  }

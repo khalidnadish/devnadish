@@ -1,0 +1,25 @@
+.btn_contaenr{
+  width: 100%;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+
+
+}
+.about_btn {
+  display: flex;
+}
+.exp_btn {
+  display: flex;
+}
+.live_btn {
+  display: flex;
+}
+.gallery_btn {
+  display: flex;
+}
+
+.contact_btn {
+  display: flex;
+}
+

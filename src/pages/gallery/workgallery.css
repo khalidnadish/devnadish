@@ -1,0 +1,8 @@
+.galleyimagStyle {
+
+    cursor: pointer;
+    /* height: auto !important; */
+    object-fit: contain;
+    width: 180px;
+    /* object-fit: fill; */
+}

@@ -1,0 +1,73 @@
+.formcontainer{
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  gap:5px;
+  font-family: "lato";
+ 
+
+
+}
+
+.formstyle{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+
+.phoneinfo{
+  display:flex;
+  flex-direction:column;
+   
+}
+ 
+.phoneinfo label{
+  color: rgb(242, 38, 38);
+  /* display:block; */
+  font-family: "lato";
+  margin: 5px;
+  
+  
+  
+  
+} 
+.textareastyle{
+  margin-top: 15px;
+}
+.inputstyle {
+  /* font-size: 16px; */
+  /* font-size: max(16px, 1em); */
+  /* font-family: inherit; */
+  padding: 0.25em 0.5em;
+  background-color: rgb(247, 247, 247);
+  border: 1px solid var(--bluecolor);
+  border-radius: 4px;
+}
+
+.css-button {
+	font-family: Arial;
+	color: #FFFFFF;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px #3866a3 solid;
+	background: linear-gradient(180deg, #63B8EE 5%, #468CCF 100%);
+
+	box-shadow:  1px 1px 2px 0px #bbdaf7;
+	padding: 5px;
+  margin-top: 5px;
+	
+	
+  text-align: center;
+}
+.css-button:hover {
+	background: linear-gradient(180deg, #468CCF 5%, #63B8EE 100%);
+}
+.css-button-icon {
+	padding: 10px 10px;
+	border-right: 1px solid rgba(255, 255, 255, 0.16);
+	box-shadow: rgba(0, 0, 0, 0.14) -1px 0px 0px inset;
+}
+ 
+ 

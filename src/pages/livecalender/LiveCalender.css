@@ -1,0 +1,16 @@
+.img_worker {
+
+
+  margin: auto;
+  vertical-align: middle
+}
+
+.xdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap:10px;
+  max-width: 300px;
+  /* background: #000; */
+}

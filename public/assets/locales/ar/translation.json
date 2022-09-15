@@ -1,5 +1,5 @@
 {
-    "aboutMeBtn":"من انا ",
+    "aboutMeBtn":"خالد",
     "livecalenderBtn":"خبرات",
     "workgallaryBtn":"معرض",
     "hiremeBtn":"وظفني",
@@ -50,8 +50,6 @@
     "hiremelongTitle":"املأ النموذج وسأعاود الاتصال بك في غضون 48 ساعة",
     "msgplaceholder":"أعطني معلومات موجزة عن المطلوب  ",
     "mailsubject":"المطلوب",
-    "sendMeEmail":"راسلني"
-
-
-
+    "sendMeEmail":"راسلني",
+    "webWork":"مواقع الكترونية"
   }

@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 import { AiOutlineEye } from "react-icons/ai";
-
 import { useTranslation } from "react-i18next";
-
 import { Box, Button, Collapse, Paper, Stack, Typography } from "@mui/material";
-
+import leno  from "/assets/gallery/website/leno.jpg"
+import welldone  from "/assets/gallery/website/welldone.jpg"
+import faq  from "/assets/gallery/website/faq.jpg"
 import "./workgallery.css";
-import { t } from "i18next";
+
 import Modalme from "../../component/modal/Modalme";
+import { borderBottom } from "@mui/system";
 
 function WorkGallery() {
   const { t } = useTranslation();
@@ -68,7 +70,15 @@ function WorkGallery() {
           mt: 4,
         }}
       >
-        <Boxstl w={"auto"} h={"auto"} range={t("smWork")}>
+        <Boxstl w={"98%"} h={"auto"} range={t("webWork")}>
+          <Box sx={{display: "flex", flexDirection:{xs:"column",md:"row"} ,justifyContent: "center",alignItems: "center"}}>
+            <WebsiteCard imgx={leno} linkme={"https://lenoresturant.netlify.app/"} stuts={"Done"}/>
+            <WebsiteCard imgx={welldone} linkme={"https://welldonesite.netlify.app/"} stuts={"Done"} />
+            <WebsiteCard imgx={faq} linkme={"https://faqlive.netlify.app/"} stuts={"Done"} stcolor={"error.main"}/>
+            <WebsiteCard />
+          </Box>
+        </Boxstl>
+        <Boxstl w={"98%"} h={"auto"} range={t("smWork")}>
           <ShowImagework
             imageArray={smAarray}
             baseulr={`/assets/gallery/sm/`}
@@ -226,7 +236,7 @@ const Boxstl = ({ w, h, children, range }) => {
   );
 };
 
-const WebsiteCard = ({ imgx }) => {
+const WebsiteCard = ({ imgx ,linkme,stuts,stcolor="primary.main"}) => {
   return (
     <>
       <div className="card">
@@ -241,9 +251,54 @@ const WebsiteCard = ({ imgx }) => {
             },
           }}
         >
-          <Paper elevation={3}>
-            <LazyLoadImage alt={imgx} effect="blur" src={imgx} />
-            {/* <img src={imgx} alt="" className="galleyimagStyle" /> */}
+          <Paper elevation={3} sx={{ position: "relative" }}>
+            <LazyLoadImage
+              alt={"برمجة مواقع متاجر الكترونية  تصميم مواقع"}
+              effect="blur"
+              src={imgx}
+            />
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                position: "absolute",
+                bottom: 0,
+                left: 0,
+                width: "100%",
+                height: "30px",
+                bgcolor: "warning.main",
+                zIndex: "100",
+                // opacity:.5,
+                p: 1,
+              }}
+            >
+              <Box   sx={{
+                color:"background.paper",
+                //  bgcolor:stcolor,
+                 borderRadius:1,
+                 px:1,
+                 boxShadow:1,
+                 borderBottom:"3px solid"
+
+
+
+              }}>
+
+              <a href={linkme} target="_blank" style={{textDecoration:"none",color:"white"}}>Visit</a>
+              </Box>
+              <Box   sx={{
+                 bgcolor:stcolor,
+                 borderRadius:1,
+                 px:1,
+                 boxShadow:1
+
+
+
+              }}>
+                <Typography sx={{color:"background.paper"}}>{stuts}</Typography>
+              </Box>
+              </Box>
           </Paper>
         </Box>
       </div>
@@ -297,7 +352,7 @@ const ShowImagework = ({ imageArray, baseulr, typex }) => {
                 <img
                   src={`${src1}?w=248&fit=crop&auto=format`}
                   srcSet={`${src1}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                  alt={`${src1}?w=248&fit=crop&auto=format`}
+                  alt={"برمجة مواقع متاجر الكترونية  تصميم مواقع"}
                   loading="lazy"
                   onError={() => {
                     // console.log("Not exist");
@@ -315,7 +370,7 @@ const ShowImagework = ({ imageArray, baseulr, typex }) => {
           <img
             src={bigimage}
             srcSet={bigimage}
-            alt={bigimage}
+            alt={"برمجة مواقع متاجر الكترونية  تصميم مواقع"}
             loading="lazy"
             onError={() => {
               // console.log("Not exist");

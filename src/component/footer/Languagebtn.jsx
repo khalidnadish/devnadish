@@ -37,10 +37,8 @@ function Languagebtn({setLang1,langimg, setLangimage}) {
       >
         <img
           src={langimg}
-          //   activeLang === "arabic"
-          //     ? "/assets/locales/en/united-states.png"
-          //     : "/assets/locales/ar/saudi-arabia.png"
-          // }
+         
+          alt="برمجة مواقع متاجر الكترونية  تصميم مواقع"
           className="langphoto"
         />
       </IconButton>

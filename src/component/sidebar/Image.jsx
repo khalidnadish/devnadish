@@ -19,7 +19,7 @@ const Image = ({activeColor}) => {
           
         }}
       >
-        <img src={me} alt="" className="img__area_cont" />
+        <img src={me} alt="برمجة مواقع متاجر الكترونية  تصميم مواقع" className="img__area_cont" />
       </Box>
     </>
   )

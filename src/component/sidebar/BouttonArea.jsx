@@ -24,37 +24,6 @@ function BouttonArea  ()  {
     setActiveLink,
   } = useContext(ProfileDetail);
 
-  const MouseEnter = (flag) => {
-    switch (flag) {
-      case "blue":
-        setBlueSize((pre) => "70%");
-        setResSize((pre) => "30%");
-        setorangeSize((pre) => "30%");
-        setgreenSize((pre) => "30%");
-        break;
-      case "red":
-        setBlueSize((pre) => "30%");
-        setResSize((pre) => "70%");
-        setorangeSize((pre) => "30%");
-        setgreenSize((pre) => "30%");
-        break;
-      case "orange":
-        setBlueSize((pre) => "30%");
-        setResSize((pre) => "30%");
-        setorangeSize((pre) => "70%");
-        setgreenSize((pre) => "30%");
-        break;
-      case "green":
-        setBlueSize((pre) => "30%");
-        setResSize((pre) => "30%");
-        setorangeSize((pre) => "30%");
-        setgreenSize((pre) => "70%");
-        break;
-
-      default:
-        break;
-    }
-  };
 
   const handleOnclick = (flag) => {
     switch (flag) {
@@ -84,12 +53,15 @@ function BouttonArea  ()  {
     <>
     <Suspense fallback={<Loader/>}>
       <div className="btn_contaenr">
+        
+        
+       
         <div className="about_btn" >
           <Btn
             title={t("aboutMeBtn")}
             xcolor={"primary.main"}
             onclick={() => handleOnclick("blue")}
-            xicon={<BsFillPersonFill color={"white"} />}
+            xicon={<BsFillPersonFill color={"white"} className="btn_class"/>}
           />
         </div>
         <div className="live_btn"  >
@@ -97,7 +69,7 @@ function BouttonArea  ()  {
             title={t("livecalenderBtn")}
             xcolor={"warning.main"}
             onclick={() => handleOnclick("orange")}
-            xicon={<BsFillCalendarCheckFill color={"white"} />}
+            xicon={<BsFillCalendarCheckFill color={"white"} className="btn_class"/>}
           />
         </div>
         <div className="gallery_btn" >
@@ -105,17 +77,22 @@ function BouttonArea  ()  {
             title={t("workgallaryBtn")}
             xcolor={"success.main"}
             onclick={() => handleOnclick("green")}
-            xicon={<RiGalleryLine color={"white"} />}
+            xicon={<RiGalleryLine color={"white"} className="btn_class" />}
           />
         </div>
         <div className="contact_btn">
           <Btn
             title={t("hiremeBtn")}
             xcolor={"secondary.light"}
-            xicon={<MdWorkOutline color={"white"} />}
+            xicon={<MdWorkOutline color={"white"} className="btn_class" />}
             onclick={() => setActiveLink("/hire")}
           />
         </div>
+        
+
+        {/* <div className="imgcontainer">
+        <img src="/assets/logo.png" alt="khalidnadish" className="btn_contaenr_img" />
+        </div> */}
       </div>
       </Suspense>
     </>

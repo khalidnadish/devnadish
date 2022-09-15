@@ -23,26 +23,26 @@ function LiveCalender() {
       <Stack sx={{ display: "flex",flexDirection:"row",flexFlow:"wrap", gap: 4, height: "100vh",justifyContent:"space-evenly" }}>
         <Boxstl w={"300px"} h={"auto"} range={"1998-2005"}>
          <div className="xdiv">
-          <img src={Q} alt="" className="img_worker" />
+          <img src={Q} alt="برمجة مواقع متاجر الكترونية  تصميم مواقع" className="img_worker" />
           <Typography variant="subtitle1" mx={2}>{t("1998_2005")}</Typography>
           </div>
           
         </Boxstl>
         <Boxstl w={"300px"} h={"auto"} range={"2006-2008"}>
         <div className="xdiv">
-          <img src={S}  alt="" className="img_worker" />
+          <img src={S}  alt="برمجة مواقع متاجر الكترونية  تصميم مواقع" className="img_worker" />
           <Typography  variant="subtitle1" mx={2}>{t("2006_2008")}</Typography>
           </div>
         </Boxstl>
         <Boxstl w={"99%"} h={"auto"} range={"2009-2010"}>
         <div className="xdiv">
-          <img src={SB} alt="" className="img_worker" />
+          <img src={SB} alt="برمجة مواقع متاجر الكترونية  تصميم مواقع" className="img_worker" />
           <Typography  variant="subtitle1" mx={2}>{t("2009_2010")}</Typography>
           </div>
         </Boxstl>
         <Boxstl w={"99%"} h={"auto"} range={"2011-2014"}>
         <div className="xdiv">
-          <img src={Q} alt="" className="img_worker" />
+          <img src={Q} alt="برمجة مواقع متاجر الكترونية  تصميم مواقع" className="img_worker" />
           <Typography  variant="subtitle1" mx={2}>{t("2011_2014")}</Typography>
         </div>
         </Boxstl>

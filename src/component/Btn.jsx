@@ -16,6 +16,7 @@ function Btn({ title, xcolor = "inherit", onclick ,xicon}) {
             bgcolor:xcolor,
             borderRadius:1,
             display:"flex",
+            fontSize:{xs:".5rem" ,md:"1rem",},
             flexDirection:{xs:"column",md:"row"}
           }}
           disableRipple

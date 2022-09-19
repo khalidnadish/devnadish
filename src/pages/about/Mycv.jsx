@@ -3,10 +3,20 @@ import { FiDownload } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import { Typography } from "@mui/material";
+import mycv from "../../assets/aboutimg/mycv.jpg"
 
 
 export const Mycv = () => {
   const { t } = useTranslation();
+
+  const onDownload = () => {
+    const link = document.createElement("a");
+    link.download = `mycv.jpg`;
+    link.href = "/assets/mycv.jpg";
+    link.click();
+  };
+
 
   return (
     <>
@@ -19,20 +29,24 @@ export const Mycv = () => {
           p: 1,
           gap: 1,
           mt: 1,
-          // width: { xs: "100%", md: "100%" },
+        
           width: "fitcontent",
           justifyContent: "center",
           "&:hover": { bgcolor: "primary.main" },
         }}
       >
         <Button
-          href="/assets/mycv.pdf"
-          download
+          href={mycv}
+          // "/assets/MYCV.jpg"
+          // onClick={onDownload}
+          download="khalidnadish.jpg"
           startIcon={<FiDownload color="white" className={"hireBtn"} />}
         >
-          <span className="cta">{t("cvbtn")}</span>
+
+
+           <Typography variant="btnFont" fontSize={"1rem"} color="common.black">{t("cvbtn")}</Typography>
         </Button>
-        {/* <span className="cta">{t("cvbtn")}</span> */}
+      
       </Box>
     </>
   );

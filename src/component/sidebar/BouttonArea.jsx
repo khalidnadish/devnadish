@@ -16,10 +16,6 @@ function BouttonArea  ()  {
   const { t } = useTranslation();
 
   const {
-    setBlueSize,
-    setResSize,
-    setorangeSize,
-    setgreenSize,
     setActiveColor,
     setActiveLink,
   } = useContext(ProfileDetail);

@@ -15,18 +15,7 @@
   width: 40px;
  
 }
-.mail_div {
-  background-color: var(--purbecolor);
-  height: 100%;
-  width: 25%;
-  color: var(--textcolor);
-  /* border-radius: 0px 0px 0px 40px; */
-  border-radius: 0px 0px 0px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-}
 .whatsapp_div {
 
   background-color: var(--greencolor);
@@ -73,21 +62,10 @@
 
 }
 
-.setting{
-  /* display: flex;
-  justify-content: space-between;
-  flex-direction: row; */
-  /* position: absolute; */
-  /* top: 50px; */
-  /* left: 20px; */
-  /* background-color:brown; */
-  /* object-fit: contain; */
-  /* padding: 5px; */
-  /* border-radius: 8px; */
 
-}
 .langphoto{
   width: 24px;
+  height: auto;
 }
 
 .mailform{
@@ -108,6 +86,10 @@
  
   
 
+  .langphoto{
+    width: 24px;
+    height: auto;
+  }
   .footercontiner{
     height: fit-content;
     width:92vw;

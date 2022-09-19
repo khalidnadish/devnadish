@@ -29,18 +29,19 @@ export const Artheme =
         fontSize: "2.2rem",
         fontWeight: "400",
       },
+     
     },
   });
 
 export const Entheme = createTheme({
  
   typography: {
-    fontFamily: "lato",
+    fontFamily: "Noto",
     h4: {
-      fontFamily: "Cairo",
+      fontFamily: "Noto",
     },
     h5: {
-      fontFamily: "Cairo",
+      fontFamily: "Noto",
     },
     subtitle2: {
       fontFamily: "lato",
@@ -55,5 +56,11 @@ export const Entheme = createTheme({
       fontFamily: "Rubik Maze",
       fontSize: "3rem",
     },
+    
+      btnFont: {
+        fontFamily: "Lemonada",
+        fontSize: "2.2rem",
+        fontWeight: "400",
+      },
   },
 });

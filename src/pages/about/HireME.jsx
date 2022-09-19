@@ -1,12 +1,17 @@
-import React from "react";
+import React,{useContext} from "react";
 import { MdWorkOutline } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
 import { Mycv } from "./Mycv";
+import { ProfileDetail } from "../../helper/context";
+import  Typography  from "@mui/material/Typography";
+import { Button } from "@mui/material";
 
 
 export const HireME = () => {
   const { t } = useTranslation();
+  const {setActiveLink  } = useContext(ProfileDetail);
+
   return (
     <>
       <Box
@@ -15,19 +20,31 @@ export const HireME = () => {
         sx={{
           display: "flex",
           alignItems: "center",
-
           p: 1,
           gap: 1,
-
           // width: { xs: "80%", md: "40%" },
           width: "fitcontent",
           justifyContent: "center",
           "&:hover": { bgcolor: "primary.main" },
         }}
-      >
-        <span className="cta">{t("hiremeBtn")}</span>
+>
+<Button
+          // href="/assets/mycv.pdf"
+          // download
+          startIcon={<MdWorkOutline color="white" className={"hireBtn"} />}
+          onClick={() => setActiveLink("/hire")}
+        >
+           <Typography variant="btnFont" fontSize={"1rem"} color="common.black">{t("hiremeBtn")}</Typography>
+        </Button>
+      
 
-        <MdWorkOutline color="white" className={"hireBtn"} />
+
+
+{/* 
+        <Typography variant="btnFont" fontSize={"1rem"} color="common.black">{t("hiremeBtn")}</Typography>
+        <span className="cta"></span>
+
+        <MdWorkOutline color="white" className={"hireBtn"} /> */}
       </Box>
       <Box
         sx={{

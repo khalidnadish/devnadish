@@ -37,7 +37,6 @@ function Languagebtn({setLang1,langimg, setLangimage}) {
       >
         <img
           src={langimg}
-         
           alt="برمجة مواقع متاجر الكترونية  تصميم مواقع"
           className="langphoto"
         />

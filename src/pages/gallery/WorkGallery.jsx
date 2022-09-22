@@ -11,6 +11,7 @@ import leno  from "/assets/gallery/website/leno.jpg"
 import welldone  from "/assets/gallery/website/welldone.jpg"
 import faq  from "/assets/gallery/website/faq.jpg"
 import ecomm  from "/assets/gallery/website/ecomm.jpg"
+import news  from "/assets/gallery/website/news.jpg"
 import "./workgallery.css";
 
 import Modalme from "../../component/modal/Modalme";
@@ -77,6 +78,7 @@ function WorkGallery() {
             <WebsiteCard imgx={welldone} linkme={"https://welldonesite.netlify.app/"} stuts={"Done"} />
             <WebsiteCard imgx={faq} linkme={"https://faqlive.netlify.app/"} stuts={"UC"} stcolor={"error.main"}/>
             <WebsiteCard imgx={ecomm} linkme={"https://nadecom.netlify.app/"} stuts={"UC"} stcolor={"error.main"}/>
+            <WebsiteCard imgx={news} linkme={"https://nadishnews.netlify.app//"} stuts={"Done"}  />
           </Box>
         </Boxstl>
         <Boxstl w={"98%"} h={"auto"} range={t("smWork")}>
